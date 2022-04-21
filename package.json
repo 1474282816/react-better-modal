@@ -1,5 +1,5 @@
 {
-  "name": "react-better-modal",
+  "name": "@dckj/react-better-modal",
   "version": "0.1.1",
   "main": "dist/index.js",
   "author": {
