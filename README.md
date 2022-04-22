@@ -17,19 +17,19 @@
 ## Installation
 
 ```shell
-> npm i react-better-modal
+> npm i @dckj/react-better-modal
 
 # or
 
-> yarn add react-better-modal
+> yarn add @dckj/react-better-modal
 ```
 
 ## Usage
 
 ```typescript
 import React from "react";
-import Modal from "react-better-modal";
-import "react-better-modal/dist/index.css";
+import Modal from "@dckj/react-better-modal";
+import "@dckj/react-better-modal/dist/index.css";
 function onHandleMove(e) {
   console.log(e, "--->>> onHandleMove");
 }
