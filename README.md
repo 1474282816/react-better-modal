@@ -1,4 +1,8 @@
-# **因作者原仓库 [https://github.com/malakirti/react-modal#react-better-modal]() 404，npm 下载有问题，因此备份这一份**
+# **因作者原仓库404，npm下载有问题，因此备份这一份**
+
+原作者npm： https://www.npmjs.com/package/react-better-modal
+
+原作者github：[https://github.com/malakirti/react-modal#react-better-modal]() 
 
 # react-better-modal
 
