@@ -1,10 +1,11 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react'), require('react-dom')) :
-    typeof define === 'function' && define.amd ? define(['react', 'react-dom'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.ReactModal = factory(global.React, global.ReactDom));
-}(this, (function (React, reactDom) { 'use strict';
+        typeof define === 'function' && define.amd ? define(['react', 'react-dom'], factory) :
+            (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.ReactModal = factory(global.React, global.ReactDom));
+}(this, (function (React, reactDom) {
+    'use strict';
 
-    function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+    function _interopDefaultLegacy(e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
     var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
@@ -24,7 +25,7 @@
     ***************************************************************************** */
     /* global Reflect, Promise */
 
-    var extendStatics = function(d, b) {
+    var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
@@ -39,7 +40,7 @@
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     }
 
-    var __assign = function() {
+    var __assign = function () {
         __assign = Object.assign || function __assign(t) {
             for (var s, i = 1, n = arguments.length; i < n; i++) {
                 s = arguments[i];
@@ -72,17 +73,17 @@
         return names
             .filter(Boolean)
             .map(function (arg) {
-            if (Array.isArray(arg)) {
-                return classNames.apply(void 0, arg);
-            }
-            if (typeof arg === 'object') {
-                return Object.keys(arg)
-                    .map(function (key, idx) { return arg[idx] || (arg[key] && key) || null; })
-                    .filter(function (el) { return el !== null; })
-                    .join(' ');
-            }
-            return arg;
-        })
+                if (Array.isArray(arg)) {
+                    return classNames.apply(void 0, arg);
+                }
+                if (typeof arg === 'object') {
+                    return Object.keys(arg)
+                        .map(function (key, idx) { return arg[idx] || (arg[key] && key) || null; })
+                        .filter(function (el) { return el !== null; })
+                        .join(' ');
+                }
+                return arg;
+            })
             .filter(Boolean)
             .join(' ');
     }
@@ -371,17 +372,17 @@
     var _ref$3 = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("style", null));
 
     var _ref2$3 = /*#__PURE__*/React.createElement("path", {
-      d: "M960 576H64c-35.4 0-64-28.6-64-64s28.6-64 64-64h896c35.4 0 64 28.6 64 64s-28.6 64-64 64z"
+        d: "M960 576H64c-35.4 0-64-28.6-64-64s28.6-64 64-64h896c35.4 0 64 28.6 64 64s-28.6 64-64 64z"
     });
 
     function SvgIconMinimize(props) {
-      return /*#__PURE__*/React.createElement("svg", _extends$3({
-        className: "icon-minimize_svg__icon",
-        viewBox: "0 0 1024 1024",
-        xmlns: "http://www.w3.org/2000/svg",
-        width: 200,
-        height: 200
-      }, props), _ref$3, _ref2$3);
+        return /*#__PURE__*/React.createElement("svg", _extends$3({
+            className: "icon-minimize_svg__icon",
+            viewBox: "0 0 1024 1024",
+            xmlns: "http://www.w3.org/2000/svg",
+            width: 200,
+            height: 200
+        }, props), _ref$3, _ref2$3);
     }
 
     function _extends$2() { _extends$2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$2.apply(this, arguments); }
@@ -389,17 +390,17 @@
     var _ref$2 = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("style", null));
 
     var _ref2$2 = /*#__PURE__*/React.createElement("path", {
-      d: "M877.625 118.25h-731.25C99.793 118.25 62 156.043 62 202.625v618.75c0 46.582 37.793 84.375 84.375 84.375h731.25c46.582 0 84.375-37.793 84.375-84.375v-618.75c0-46.582-37.793-84.375-84.375-84.375zm0 692.578c0 5.8-4.746 10.547-10.547 10.547H156.922c-5.8 0-10.547-4.746-10.547-10.547V399.5h731.25v411.328z"
+        d: "M877.625 118.25h-731.25C99.793 118.25 62 156.043 62 202.625v618.75c0 46.582 37.793 84.375 84.375 84.375h731.25c46.582 0 84.375-37.793 84.375-84.375v-618.75c0-46.582-37.793-84.375-84.375-84.375zm0 692.578c0 5.8-4.746 10.547-10.547 10.547H156.922c-5.8 0-10.547-4.746-10.547-10.547V399.5h731.25v411.328z"
     });
 
     function SvgIconMaximize(props) {
-      return /*#__PURE__*/React.createElement("svg", _extends$2({
-        className: "icon-maximize_svg__icon",
-        viewBox: "0 0 1024 1024",
-        xmlns: "http://www.w3.org/2000/svg",
-        width: 200,
-        height: 200
-      }, props), _ref$2, _ref2$2);
+        return /*#__PURE__*/React.createElement("svg", _extends$2({
+            className: "icon-maximize_svg__icon",
+            viewBox: "0 0 1024 1024",
+            xmlns: "http://www.w3.org/2000/svg",
+            width: 200,
+            height: 200
+        }, props), _ref$2, _ref2$2);
     }
 
     function _extends$1() { _extends$1 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends$1.apply(this, arguments); }
@@ -407,17 +408,17 @@
     var _ref$1 = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("style", null));
 
     var _ref2$1 = /*#__PURE__*/React.createElement("path", {
-      d: "M902 32H302c-49.688 0-90 40.313-90 90v90h-90c-49.688 0-90 40.313-90 90v600c0 49.688 40.313 90 90 90h600c49.688 0 90-40.313 90-90v-90h90c49.688 0 90-40.313 90-90V122c0-49.688-40.313-90-90-90zM722 902H122V512h600v390zm180-180h-90V302c0-49.688-40.313-90-90-90H302v-90h600v600z"
+        d: "M902 32H302c-49.688 0-90 40.313-90 90v90h-90c-49.688 0-90 40.313-90 90v600c0 49.688 40.313 90 90 90h600c49.688 0 90-40.313 90-90v-90h90c49.688 0 90-40.313 90-90V122c0-49.688-40.313-90-90-90zM722 902H122V512h600v390zm180-180h-90V302c0-49.688-40.313-90-90-90H302v-90h600v600z"
     });
 
     function SvgIconRestore(props) {
-      return /*#__PURE__*/React.createElement("svg", _extends$1({
-        className: "icon-restore_svg__icon",
-        viewBox: "0 0 1024 1024",
-        xmlns: "http://www.w3.org/2000/svg",
-        width: 200,
-        height: 200
-      }, props), _ref$1, _ref2$1);
+        return /*#__PURE__*/React.createElement("svg", _extends$1({
+            className: "icon-restore_svg__icon",
+            viewBox: "0 0 1024 1024",
+            xmlns: "http://www.w3.org/2000/svg",
+            width: 200,
+            height: 200
+        }, props), _ref$1, _ref2$1);
     }
 
     function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -425,17 +426,17 @@
     var _ref = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("style", null));
 
     var _ref2 = /*#__PURE__*/React.createElement("path", {
-      d: "M506.375 433.25l-315-320.625c-22.5-22.5-56.25-22.5-84.375 0-22.5 22.5-22.5 56.25 0 84.375l320.625 315L107 832.625c-22.5 22.5-22.5 56.25 0 84.375 22.5 22.5 56.25 22.5 84.375 0L512 596.375 832.625 917c22.5 22.5 56.25 22.5 84.375 0 22.5-22.5 22.5-56.25 0-84.375L590.75 512l320.625-320.625c22.5-22.5 22.5-56.25 0-84.375-22.5-22.5-56.25-22.5-84.375 0L506.375 433.25z"
+        d: "M506.375 433.25l-315-320.625c-22.5-22.5-56.25-22.5-84.375 0-22.5 22.5-22.5 56.25 0 84.375l320.625 315L107 832.625c-22.5 22.5-22.5 56.25 0 84.375 22.5 22.5 56.25 22.5 84.375 0L512 596.375 832.625 917c22.5 22.5 56.25 22.5 84.375 0 22.5-22.5 22.5-56.25 0-84.375L590.75 512l320.625-320.625c22.5-22.5 22.5-56.25 0-84.375-22.5-22.5-56.25-22.5-84.375 0L506.375 433.25z"
     });
 
     function SvgIconClose(props) {
-      return /*#__PURE__*/React.createElement("svg", _extends({
-        className: "icon-close_svg__icon",
-        viewBox: "0 0 1024 1024",
-        xmlns: "http://www.w3.org/2000/svg",
-        width: 200,
-        height: 200
-      }, props), _ref, _ref2);
+        return /*#__PURE__*/React.createElement("svg", _extends({
+            className: "icon-close_svg__icon",
+            viewBox: "0 0 1024 1024",
+            xmlns: "http://www.w3.org/2000/svg",
+            width: 200,
+            height: 200
+        }, props), _ref, _ref2);
     }
 
     var TitleBar = /** @class */ (function (_super) {
@@ -500,8 +501,10 @@
                 onResize(event, { direction: key, end: true });
             }
         }
-        return (React__default['default'].createElement("div", null, directions.map(function (key) { return (React__default['default'].createElement(Draggable, { key: key, onDrag: function (data) { return onDrag(data, key); }, onRelease: function (data) { return onRelease(data, key); } },
-            React__default['default'].createElement("div", { style: { display: 'block', touchAction: 'none' }, className: "rm-resize-handle " + key }))); })));
+        return (React__default['default'].createElement("div", null, directions.map(function (key) {
+            return (React__default['default'].createElement(Draggable, { key: key, onDrag: function (data) { return onDrag(data, key); }, onRelease: function (data) { return onRelease(data, key); } },
+                React__default['default'].createElement("div", { style: { display: 'block', touchAction: 'none' }, className: "rm-resize-handle " + key })));
+        })));
     }
 
     var Modal = /** @class */ (function (_super) {
@@ -688,11 +691,33 @@
                 var _a = _this.props, _b = _a.draggable, draggable = _b === void 0 ? true : _b, onMove = _a.onMove;
                 e.originalEvent.preventDefault();
                 if (_this.windowStage !== windowStage.FULLSCREEN && draggable) {
+                    const limit = 20;
+                    let top = Math.max(e.pageY - _this.windowCoordinatesState.differenceTop, 0);
+                    let left = e.pageX - _this.windowCoordinatesState.differenceLeft;
+
+                    if (window.screen.width - e.pageX - _this.state.width + _this.windowCoordinatesState.differenceLeft < limit) {
+                        // 右边边界
+                        left = window.screen.width - _this.state.width - limit;
+                    } else if (e.pageX - _this.windowCoordinatesState.differenceLeft < limit) {
+                        // 左边边界
+                        left = limit;
+                    }
+
+                    if (window.screen.height - e.pageY - _this.state.height + _this.windowCoordinatesState.differenceTop < limit) {
+                        // 下边界
+                        top = window.screen.height - _this.state.height - limit;
+                    } else if (e.pageY - _this.windowCoordinatesState.differenceTop < limit) {
+                        // 上边界
+                        top = limit;
+                    }
+
+
                     _this.setState({
-                        top: Math.max(e.pageY - _this.windowCoordinatesState.differenceTop, 0),
-                        left: e.pageX - _this.windowCoordinatesState.differenceLeft,
+                        top: top,
+                        left: left,
                         isDragging: true,
                     });
+
                     if (onMove) {
                         _this.dispatchMoveEvent(onMove, e, true, false);
                     }
@@ -746,6 +771,7 @@
                 top: _this.getInitialTop(),
                 left: _this.getInitialLeft(),
                 isDragging: false,
+                scrollBarWidth: props.scrollBarWidth || 17
             };
             _this.windowCoordinatesState = {
                 widthBeforeAction: _this.getInitialWidth(),
@@ -760,6 +786,8 @@
         Modal.getDerivedStateFromProps = function (nextProps) {
             // 弹窗关闭的时候重置为初始数据
             if (nextProps.visible === false) {
+                document.body.style.overflow = "unset";
+                document.body.style.paddingRight = "0px"; // 恢复
                 var width = DEFAULT_WIDTH;
                 if (nextProps.width !== undefined) {
                     width = nextProps.width;
@@ -929,13 +957,17 @@
             // 暂时暴力处理。@todo 隐藏保留组件
             if (!this.props.visible)
                 return null;
+            document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${this.props.scrollBarWidth || 17}px`; // 把滚动条占据的空间补上，否则页面会整体右移
             var _a = this.props, appendContainer = _a.appendContainer, theme = _a.theme, _b = _a.mask, mask = _b === void 0 ? true : _b, maskStyle = _a.maskStyle, maskClassName = _a.maskClassName, _c = _a.shouldUpdateOnDrag, shouldUpdateOnDrag = _c === void 0 ? false : _c, _d = _a.draggable, draggable = _d === void 0 ? true : _d, _e = _a.resizable, resizable = _e === void 0 ? true : _e, title = _a.title, titleBarClassName = _a.titleBarClassName, style = _a.style, className = _a.className, _f = _a.zIndex, zIndex = _f === void 0 ? 1000 : _f, contentClassName = _a.contentClassName, children = _a.children, footerClassName = _a.footerClassName, _g = _a.showCancel, showCancel = _g === void 0 ? true : _g, _h = _a.showOk, showOk = _h === void 0 ? true : _h, cancelText = _a.cancelText, okText = _a.okText, footer = _a.footer;
             var isDragging = this.state.isDragging;
             var Window = (React__default['default'].createElement(React__default['default'].Fragment, null,
                 mask && (React__default['default'].createElement("div", { style: __assign(__assign({}, maskStyle), { zIndex: zIndex }), className: classNames('rm-mask', maskClassName), onClick: this.onHandleMaskClick })),
-                React__default['default'].createElement("div", { style: __assign({ width: this.width, height: this.height, top: this.top, left: this.left, zIndex: zIndex + 1 }, style), className: classNames('rm-window', className, theme, {
+                React__default['default'].createElement("div", {
+                    style: __assign({ width: this.width, height: this.height, top: this.top, left: this.left, zIndex: zIndex + 1 }, style), className: classNames('rm-window', className, theme, {
                         'rm-window-minimized': this.windowStage === 'MINIMIZED',
-                    }), tabIndex: -1, onFocus: function (e) { return e.target.classList.add('rm-state-focused'); }, onBlur: function (e) { return e.target.classList.remove('rm-state-focused'); }, onKeyDown: this.onHandleKeyDown },
+                    }), tabIndex: -1, onFocus: function (e) { return e.target.classList.add('rm-state-focused'); }, onBlur: function (e) { return e.target.classList.remove('rm-state-focused'); }, onKeyDown: this.onHandleKeyDown
+                },
                     React__default['default'].createElement(Optimization, { shouldUpdateOnDrag: shouldUpdateOnDrag, isDragging: isDragging },
                         React__default['default'].createElement(TitleBar, { className: titleBarClassName, stage: this.windowStage, draggable: draggable, onDoubleClick: this.doubleClickStageChange, onMinimizeButtonClick: this.handleMinimize, onFullScreenButtonClick: this.handleFullscreen, onRestoreButtonClick: this.handleRestore, onCloseButtonClick: this.handleCloseWindow, minimizeButton: this.props.minimizeButton, maximizeButton: this.props.maximizeButton, restoreButton: this.props.restoreButton, closeButton: this.props.closeButton, onPress: this.onPress, onDrag: this.onDrag, onRelease: this.onRelease }, title),
                         this.windowStage !== windowStage.MINIMIZED ? (React__default['default'].createElement("div", { className: classNames('rm-window-content', contentClassName) }, children)) : null,
